@@ -1,0 +1,15 @@
+<h1 id="platformio-instalation-on-ubuntu">PlatformIO Instalation on Ubuntu</h1>
+<p>I don&#39;t think this is an usual problem, but for some reason when I was installing PlattformIO I run into it. </p>
+<h4 id="my-steps-before-i-got-the-first-error-">My steps before I got the first error:</h4>
+<ol>
+<li>Installed VSCode from the Ubuntu Software application</li>
+<li>Tried to install PlatformIO from the extensions installer in VSCode. </li>
+</ol>
+<p>The installer breaks and shows the following error:</p>
+<pre><code><span class="hljs-keyword">Error: </span>The Python 3.8.10 (/usr/bin/python3) interpreter is not compatible. Reason: Could not find distutils module at &lt;path&gt; ...
+</code></pre><p>I checked my Python in the command Line with:</p>
+<pre><code><span class="hljs-keyword">python3</span> --<span class="hljs-keyword">version</span>
+</code></pre><p>Here is everything ok.  Searched my error in Google and found on <a href="https://stackoverflow.com/questions/3810521/how-to-install-python-distutils">StackOverflow</a> that I can instal the distutils module with: </p>
+<pre><code>sudo apt-<span class="hljs-built_in">get</span> install <span class="hljs-keyword">python3</span>-distutils
+</code></pre><p>After the installation is done It&#39;s time to restart VSCode. The PlatformIO instalation now runs successfully! </p>
+<p>In the end VSCode will ask for reloading the window, after reloaded PlatfoirmIO runs without problems. </p>
