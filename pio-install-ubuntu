@@ -1,0 +1,28 @@
+# PlatformIO Instalation on Ubuntu
+
+I don't think this is an usual problem, but for some reason when I was installing PlattformIO I run into it. 
+
+#### My steps before I got the first error: 
+
+1. Installed VSCode from the Ubuntu Software application
+2. Tried to install PlatformIO from the extensions installer in VSCode. 
+
+The installer breaks and shows the following error:
+
+´´´
+Error: The Python 3.8.10 (/usr/bin/python3) interpreter is not compatible. Reason: Could not find distutils module... 
+´´´
+
+I checked my Python in the command Line with:
+
+´´´
+python3 --version
+´´´
+Here is everything ok.  Searched my error in Google and found on [StackOverflow](https://stackoverflow.com/questions/3810521/how-to-install-python-distutils) that I can instal the distutils module with: 
+
+´´´
+sudo apt-get install python3-distutils
+´´´
+After the installation is done It's time to restart VSCode. The PlatformIO instalation now runs successfully! 
+
+In the end VSCode will ask for reloading the window, after reloaded PlatfoirmIO runs without problems. 
