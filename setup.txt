@@ -1,5 +1,5 @@
 For testing in local host use the command: 
-$ python3 /m http.server 12345
+$ python3 -m http.server 12345
 You can open the website in a browser: 
 http://0.0.0.0:12345/
 
