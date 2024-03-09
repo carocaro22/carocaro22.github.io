@@ -1,0 +1,16 @@
+For testing in local host use the command: 
+$ python3 /m http.server 12345
+You can open the website in a browser: 
+http://0.0.0.0:12345/
+
+For creating requirement.txt use:
+$ conda list --export > requirements.txt
+
+For creating conda virtual environment in custom path use:
+conda create --prefix /home/jonas/Carolina/path/to/env
+
+For activating conda environment use:
+conda activate /home/jonas/Carolina/path/to/env
+
+For deactivating it: 
+conda deactivate
