@@ -18,5 +18,8 @@ conda deactivate
 activate ssh agent in background
 eval "$(ssh-agent -s)"
 
-add key: (in Carolina folder) 
+add key: (folder Carolina in Jonas computer) 
 ssh-add github_ssh
+
+add key (in my computer)
+ssh-add ~/.ssh/github1
