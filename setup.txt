@@ -14,3 +14,9 @@ conda activate /home/jonas/Carolina/path/to/env
 
 For deactivating it: 
 conda deactivate
+
+activate ssh agent in background
+eval "$(ssh-agent -s)"
+
+add key: (in Carolina folder) 
+ssh-add github_ssh
